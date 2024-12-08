@@ -1,0 +1,24 @@
+{
+  "sa": "PUBLIC KEY OF SENDER",
+  "ra": "PUBLIC KEY OF RECEIVER",
+
+  "em": "Encrypted Message - JSON Array - Also includes the sa, ra and checksum to verify integrity. If tampered, message is ignored.",
+
+  "dt": "Message time - UTC - yymmddhhmmss",
+
+  "bc": "Broadcast - BOOLEAN",
+  "dm": "Decrypted or Unencrypted Message",
+  "bi": "Broadcast group id",
+
+  "cs": "CHECKSUM - sa + ra + em + dt",
+  "ct": "CHECKSUM Type - MD5 or SHA256 - Optional",
+
+  "tl": "Time to Live - INT - Number of Hours",
+  "nh": "Number of hops - INT - Count the number of bounces",
+
+  "ar": "Acknowledgement Required - BOOLEAN",
+  "ak": "Acknowledgement - BOOLEAN",
+  "am": "Acknowledgement Message - STRING - To verify it was successfully delivered - Optional",
+
+  "lc": "Location co-ordinates - GPS. While sending the message, the senders location is captured and sent along with the message. While sending the Acknowledgement, the receivers location is sent."
+}
